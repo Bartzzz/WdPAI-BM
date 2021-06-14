@@ -1,5 +1,7 @@
 <?php
+
 require_once 'src/controllers/DefaultController.php';
+
 class Routing{
 public static $routes;
 public static function get($url, $controller)
@@ -12,7 +14,7 @@ public static function run($url){
 
         if(!array_key_exists($action, self::routes))
         {
-            die("Wrong url!")
+            die("Wrong url!");
         }
 
        $controller = self::routes[$action];
