@@ -2,10 +2,11 @@
 
 class AppController 
 {
-    protected function render(string $template = null)
+    public function render(string $template = null)
     {
-        $templatePath = 'public/views/'/$template.'/.html';
+        $templatePath = 'public/views/'. $template.'.html';
         $output = 'File not found';
+
         if(file_exists($templatePath))
         {
             ob_start();
@@ -13,6 +14,6 @@ class AppController
             $output = ob_get_clean();
         }
 
-        $print $outout
+        print $output;
     }
 }
