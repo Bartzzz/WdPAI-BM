@@ -7,7 +7,7 @@ class SecurityController extends AppController
 {
     public function login()
     {
-        $user = new User('bmdd@pk.edu.pl', 'admin', 'Janusz', 'Kowalski');
+        $userRepository = new UserRepository();
 
         if($this->isPost())
         {
@@ -17,6 +17,12 @@ class SecurityController extends AppController
         $email = $_POST["email"];
         $password = $_POST["password"];
 
+        $user = $userRepository->getUser($email);
+
+        if(!$user)
+        {
+            return $this->render('login', ['messages' => ['User does not exist']]);
+        }
         if($user->getEmail() !== $email)
         {
             return $this->render('login', ['messages' => ['User With this email does not exist']]);
