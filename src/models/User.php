@@ -15,7 +15,7 @@ class User
        $this->surname =$surname;
    }
 
-   public function getEmail(string $email)
+   public function getEmail()
    {
         return $this->email;
    }
@@ -24,7 +24,7 @@ class User
        $this->email = $email;
    }
 
-   public function getPasssword(string $password)
+   public function getPasssword()
    {
         return $this-> password;
    }
@@ -33,7 +33,7 @@ class User
        $this->password = $password;
    }
 
-   public function getName(string $name)
+   public function getName()
    {
         return $this-> name;
    }
@@ -42,7 +42,7 @@ class User
        $this->name = $name;
    }
 
-   public function getSurname(string $surname)
+   public function getSurname()
    {
         return $this->surname;
    }

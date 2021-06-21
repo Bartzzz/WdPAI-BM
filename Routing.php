@@ -27,7 +27,7 @@ public static function run($url){
 
        $controller = self::$routes[$action];
        $object = new $controller;
-       $action = $action ?: 'index';
+       $action = $action ?: 'Index';
 
        $object -> $action();
 }
