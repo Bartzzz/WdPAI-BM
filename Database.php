@@ -1,35 +1,37 @@
 <?php
 
-require_once 'config.php';
+require_once "config.php";
 
-class Database
-{
+class Database {
     private $username;
     private $password;
-    private $connection;
+    private $host;
     private $database;
 
     public function __construct()
     {
         $this->username = USERNAME;
         $this->password = PASSWORD;
-        $this->connection = CONNECTION;
+        $this->host = HOST;
         $this->database = DATABASE;
     }
 
     public function connect()
     {
-        try
-        {
-            $conn = new PDO($this->connection, $this->username.$this->database, $this->password);
-            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        try {
+            $conn = new PDO(
+                "pgsql:host=$this->host;port=5432;dbname=$this->database",
+                $this->username,
+                $this->password,
+                ["sslmode"  => "prefer"]
+            );
 
+            // set the PDO error mode to exception
+            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             return $conn;
         }
-        catch (PDOException $e)
-        {
-            print("Error connecting to SQL Server.");
-            die(print_r($e));
-        }        
+        catch(PDOException $e) {
+            die("Connection failed: " . $e->getMessage());
+        }
     }
 }
