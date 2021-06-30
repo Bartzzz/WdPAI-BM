@@ -97,17 +97,15 @@ nav {
     width: 15vw;
     height: 100%;
     background: transparent linear-gradient(180deg, #3D8EF3 0%, #2251B9 100%) 0% 0% no-repeat padding-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 main {
     width: 80vw;
 }
 
-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
 
 nav>img {
     width: 60%;
@@ -120,6 +118,10 @@ a {
     line-height: 2em;
 }
 
+.align-list-item{
+    text-align: right;
+}
+
 li i {
     font-size: 1.5em;
 }
@@ -128,23 +130,14 @@ li i {
     border: 1px solid #FFFFFF;
     border-radius: 1em;
     margin-left: 1em;
+    margin-right: 20px;
     text-align: center;
     letter-spacing: 0.72px;
     color:black;
     padding: 0.2rem;
     width: 60%;
 }
-.header-button{
-    border: none;
-    margin-left: 1em;
-    text-align: center;
-    font-size: large;
-    letter-spacing: 0.72px;
-    color:black;
-    padding: 0.2rem;
-    width: 10%;
-    background: none;
-}
+
 ul {
     list-style-type: none;
     font: normal normal normal 20px/27px Segoe UI;
@@ -180,11 +173,33 @@ header {
 .header-buttons{
     display: inline-block;
     justify-content: start;
-    align-items: center;
-    border:none;
+    align-items: end;
+    border: none;
     height: 2vh;
     background: none;
-    width: 30vw;
+    width: 12vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.header-button{
+    border: 1px solid #ffffff00;
+    text-align: center;
+    font-size: large;
+    letter-spacing: 0.72px;
+    color:black;
+    padding: 0.2rem;
+    width: 2vw;
+    background: rgb(255, 255, 255);
+    margin: 20px 1px 1px 1px;
+}
+
+.header-placeholder {
+    background-color: transparent;
+    border: 1px solid gray;
+    padding: 1em;
+    margin: 1em;
+    width: 50%;
 }
 
 .header-profile-photo{
