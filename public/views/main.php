@@ -10,23 +10,23 @@
             <nav>
                 <img src="public/img/logo.svg">
                 <ul>
-                    <li>
-                        <img class="profile-img" src = "public/img/this-person-does-not-exist-beekman-foundation-07-300x300.png">
+                    <li class="align-list-item"> 
+                        <i class="fas fa-portrait"></i>
                         <a href="#" class="button">Profile</a>
                     </li>
-                    <li>
+                    <li class="align-list-item">
                         <i class="fas fa-dumbbell"></i>
                         <a href="#" class="button">Training</a>
                     </li>
-                    <li>
+                    <li class="align-list-item">
                         <i class="fas fa-utensils"></i>
                         <a href="#" class="button">Diet</a>
                     </li>
-                    <li>
+                    <li class="align-list-item">
                         <i class="fas fa-book-open"></i>
                         <a href="#" class="button">Diary</a>
                     </li>
-                    <li>
+                    <li class="align-list-item">
                         <i class="fas fa-user-friends"></i>
                         <a href="#" class="button">People</a>
                     </li>
@@ -35,14 +35,14 @@
             <main>
                 <header>
                     <div class="search-bar">
-                            <input placeholder="search project">
+                            <input class="header-placeholder" placeholder="search people">
                     </div>
                     <div class="header-buttons">
-                        <input class="header-profile-photo" type="image" src="public/img/this-person-does-not-exist-beekman-foundation-07-300x300.png" name="profile" height="40" width="40"/>  
-                        <input class="header-button"><i class="fa fa-bars"></i></button>
-                        <butinput ton class="header-button"><i class="fa fa-trash"></i></button>
-                        <button class="header-button"><i class="fa fa-close"></i></button>
-                        <button class="header-button"><i class="fa fa-folder"></i></button>
+                        <button class="header-button"><i class="fas fa-portrait"></i></button>
+                        <button class="header-button"><i class="fas fa-comment-alt"></i></button>
+                        <button class="header-button"><i class="fas fa-bell"></i></button>
+                        <button class="header-button"><i class="fas fa-cog"></i></button>
+                        <button class="header-button"><i class="fas fa-sign-out-alt"></i></button>
                     </div>
                 </header>
                 <section class="main-page">
