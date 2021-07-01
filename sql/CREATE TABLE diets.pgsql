@@ -1,10 +1,9 @@
-CREATE TABLE diets
+CREATE TABLE User_Details
 (
    id INT NOT NULL PRIMARY KEY,
    userId INT,
-   target VARCHAR(255) NOT NULL,
-   calories INT NOT NULL,
-   protein INT NOT NULL,
-   fat INT NOT NULL,
-   carbs INT NOT NULL
+   name VARCHAR(255) NOT NULL,
+   surname VARCHAR(255) NOT NULL,
+   phone VARCHAR(255) NOT NULL,
+
 )
