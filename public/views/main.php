@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+<script type="text/javascript" src="./public/js/main-page-script.js"></script>
     <link rel="stylesheet" type="text/css" href="public/css/style.css">
     <link rel="stylesheet" type="text/css" href="public/css/main.css">
     <script src="https://kit.fontawesome.com/9de8fe6b2a.js" crossorigin="anonymous"></script>
@@ -38,11 +39,11 @@
                             <input class="header-placeholder" placeholder="search people">
                     </div>
                     <div class="header-buttons">
-                        <button class="header-button"><i class="fas fa-portrait"></i></button>
+                        <button class="header-button" onclick="profile()"><i class="fas fa-portrait"></i></button>
                         <button class="header-button"><i class="fas fa-comment-alt"></i></button>
                         <button class="header-button"><i class="fas fa-bell"></i></button>
                         <button class="header-button"><i class="fas fa-cog"></i></button>
-                        <button class="header-button"><i class="fas fa-sign-out-alt"></i></button>
+                        <button class="header-button" onclick="logout()"><i class="fas fa-sign-out-alt"></i></button>
                     </div>
                 </header>
                 <section class="main-page">

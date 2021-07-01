@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<script type="text/javascript" src="./public/js/login-page-script.js"></script>
 <head>
     <link rel="stylesheet" type="text/css" href="public/css/style.css">
     <title>Login Page</title>
@@ -21,8 +22,13 @@
                         ?>
                     <input name="email" type="text" placeholder="email@email.com">
                     <input name="password" type="text" placeholder="password">
-                    <button type="submit">LOGIN</button> 
-                </form>    
+                    <button type="submit">LOGIN</button>
+                </form>
             </div>
+                <div>
+                    <button id="signUpBtn" onclick="myFunction()">Sign Up</button>
+                </div>
+            
+                    </div>
         </div>
     </body>

@@ -13,4 +13,8 @@ class DefaultController extends AppController
     {
         $this->render('main');
     }
+    public function userProfile()
+    {
+        $this->render('userProfile');
+    }
 }

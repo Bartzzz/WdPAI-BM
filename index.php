@@ -8,5 +8,7 @@ $path = parse_url( $path, PHP_URL_PATH);
 Routing::get('', 'DefaultController');
 Routing::get('main', 'DefaultController');
 Routing::post('login', 'SecurityController');
+Routing::post('signup', 'SignUpController');
+Routing::post('userProfile', 'DefaultController');
 
 Routing::run($path);
