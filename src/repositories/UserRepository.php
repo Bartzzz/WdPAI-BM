@@ -32,7 +32,7 @@ class UserRepository extends BaseRepository
     {
         $stmt = $this->database->connect()->prepare('
             INSERT INTO users (name, surname, password, email)
-            VALUES (?, ?, ?, ?, ?)');
+            VALUES (?, ?, ?, ?)');
 
         $stmt->execute([
             $user->getName(),

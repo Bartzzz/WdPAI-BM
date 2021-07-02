@@ -8,6 +8,8 @@ class SignUpController extends AppController {
 
     public function signup()
     {
+        $userRepository = new UserRepository();
+
         if (!$this->isPost())
         {
             return $this->render('signup');
@@ -27,7 +29,7 @@ class SignUpController extends AppController {
         //TODO try to use better hash function
         $user = new User($email, md5($password), $name, $surname);
 
-        $this->userRepository->addUser($user);
+        $userRepository->addUser($user);
 
         return $this->render('login', ['messages' => ['You\'ve been succesfully registered!']]);
     }
