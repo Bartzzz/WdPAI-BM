@@ -34,4 +34,12 @@ class SecurityController extends AppController {
         $url = "http://$_SERVER[HTTP_HOST]";
         header("Location: {$url}/main");
     }
+
+    public function logout()
+    {
+        $user = null;
+        if (!$this->isPost()) {
+            return $this->render('login');
+        }
+    }
 }

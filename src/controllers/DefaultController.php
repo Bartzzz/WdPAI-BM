@@ -6,15 +6,31 @@ class DefaultController extends AppController
  {
     public function index()
     {
-        $this->render('login', ['message' => "Hello World!"]);
+        $this->render('login');
     }
 
     public function main()
     {
-        $this->render('main');
+        $this->render('profile');
     }
-    public function userProfile()
+
+    public function training()
     {
-        $this->render('userProfile');
+        $this->render('training');
+    }
+
+    public function diet()
+    {
+        $this->render('diet');
+    }
+
+    public function diary()
+    {
+        $this->render('diary');
+    }
+
+    public function people()
+    {
+        $this->render('people');
     }
 }

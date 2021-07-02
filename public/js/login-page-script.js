@@ -1,3 +1,3 @@
-function myFunction() {
+function signup() {
     location = "/signup";
   }

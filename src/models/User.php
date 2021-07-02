@@ -11,8 +11,8 @@ class User {
         string $email,
         string $password,
         string $name,
-        string $surname)   
-    {
+        string $surname
+    ) {
         $this->email = $email;
         $this->password = $password;
         $this->name = $name;

@@ -26,7 +26,7 @@
                 </form>
             </div>
                 <div>
-                    <button id="signUpBtn" onclick="myFunction()">Sign Up</button>
+                    <button id="signUpBtn" onclick="signup()">Sign Up</button>
                 </div>
             
                     </div>

@@ -1,7 +1,7 @@
 function logout() {
-    location = "/login";
+    location = "/logout";
   }
 
-function profile(){
-    location = "/userProfile";
+function main(){
+    location = "/main";
   }

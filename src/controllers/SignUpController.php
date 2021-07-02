@@ -12,9 +12,6 @@ class SignUpController extends AppController {
         {
             return $this->render('signup');
         }
-        if (!$this->isPost()) {
-            return $this->render('register');
-        }
 
         $email = $_POST['email'];
         $password = $_POST['password'];
@@ -29,7 +26,6 @@ class SignUpController extends AppController {
 
         //TODO try to use better hash function
         $user = new User($email, md5($password), $name, $surname);
-        $user->setPhone($phone);
 
         $this->userRepository->addUser($user);
 
